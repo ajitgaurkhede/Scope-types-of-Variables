@@ -1,0 +1,64 @@
+
+
+/*
+
+	Types of variables
+	
+	*	Instance Variable	:- declaration in side class & out side methods , Constructor & blocks 
+					memory allocation Heap Memory, when object is created 
+	
+	
+	*	Static Variable		:-  declaration in side class & out side methods , Constructor & blocks 
+	
+					memory allocation in static memory when .class file is loaded
+	
+	*	Local Variable		:- scope & declaration in Constructor , methods & blocks
+					memory allocation in stack memory area when methods constructor & blocks Executed
+	
+*/
+
+
+class Demo{
+
+
+		public int I ;		// Instance Var , we can use access specifier 
+	
+		public static int p  ;	// static var , we can use access specifier 
+		
+		
+		
+		
+		
+		
+		
+
+
+	public static void main(String args[]){
+	
+	
+		 /* Local Variable should be Initialize with declaration before use bcz it does not have default value	
+		 int a ;	
+		System.out.println(a);	 error: variable a might not have been initialized
+		*/
+		
+		// public int a = 50 ;	error: illegal start of expression , we can not use any access specifier
+		
+		 int a = 50 ;		// correct
+		
+		System.out.println(a);
+		
+		Demo obj = new Demo();
+		
+		
+		System.out.println(obj.I); // 0 they have default value 
+	
+		System.out.println(p);		// 0 they have default value
+	
+	
+	
+	
+	}
+	
+
+
+}
