@@ -1,1 +1,2 @@
-Scope of Variables
+Scope of Variables 
+Concepts
